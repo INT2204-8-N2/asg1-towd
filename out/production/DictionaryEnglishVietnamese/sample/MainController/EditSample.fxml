@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="499.0" styleClass="bodybg" stylesheets="@Background.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainController.EditWordController">
+   <children>
+      <GridPane layoutX="33.0" layoutY="31.0" prefHeight="300.0" prefWidth="437.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="184.0" minWidth="10.0" prefWidth="88.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="349.0" minWidth="10.0" prefWidth="349.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="67.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="95.0" minHeight="0.0" prefHeight="58.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="152.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="oldWord" prefHeight="30.0" prefWidth="306.0" promptText="Old Word" GridPane.columnIndex="1">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="newWord" prefHeight="30.0" prefWidth="306.0" promptText="New Word" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <Label prefHeight="35.0" prefWidth="131.0" text="Old Word:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label prefHeight="32.0" prefWidth="129.0" text="New Word:" GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label prefHeight="33.0" prefWidth="131.0" text="Meaning:" GridPane.rowIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="meaning" prefHeight="200.0" prefWidth="200.0" promptText="Meaning" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextArea>
+         </children>
+      </GridPane>
+      <Button fx:id="Save" layoutX="313.0" layoutY="347.0" mnemonicParsing="false" onAction="#EditWord" prefHeight="37.0" prefWidth="69.0" text="Save">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="Cancle" layoutX="409.0" layoutY="347.0" mnemonicParsing="false" onAction="#Cancle" prefHeight="30.0" prefWidth="69.0" text="Cancle">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

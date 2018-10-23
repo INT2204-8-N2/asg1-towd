@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="500.0" styleClass="bodybg" stylesheets="@Background.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainController.GoogleTranslateController">
+   <children>
+      <Button fx:id="GoogleDich" layoutX="268.0" layoutY="341.0" mnemonicParsing="false" onAction="#setTranslate" prefHeight="37.0" prefWidth="100.0" text="Translate">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="Cancle" layoutX="393.0" layoutY="341.0" mnemonicParsing="false" onAction="#Cancle" prefHeight="25.0" prefWidth="76.0" text="Cancle">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="word" layoutX="142.0" layoutY="43.0" prefHeight="130.0" prefWidth="327.0" promptText="Word" wrapText="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextArea>
+      <TextArea fx:id="meaning" layoutX="142.0" layoutY="190.0" prefHeight="130.0" prefWidth="327.0" promptText="Meaning" wrapText="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextArea>
+      <Label layoutX="22.0" layoutY="93.0" prefHeight="30.0" prefWidth="100.0" text="Word:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="245.0" prefHeight="30.0" prefWidth="100.0" text="Meaning:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
