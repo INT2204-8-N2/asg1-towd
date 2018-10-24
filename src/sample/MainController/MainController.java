@@ -24,6 +24,8 @@ import java.util.ArrayList;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
+import static jdk.nashorn.internal.objects.NativeString.trim;
+
 public class MainController implements Initializable {
     @FXML
     public  TableView<Word> wordTableView;
@@ -82,7 +84,7 @@ public class MainController implements Initializable {
 
         word.textProperty().addListener((observable, oldValue, newValue) -> {
             filteredData.setPredicate(word -> {
-                if (newValue == null || newValue.isEmpty()) {
+                if (newValue == null || trim(newValue.isEmpty())) {
                     return true;
                 }
                 String lowerCaseFilter = newValue.toLowerCase();
