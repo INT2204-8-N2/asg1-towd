@@ -13,7 +13,7 @@ public class BinarySearch {
 
         int searchIndex = binarySearch(array,search);
         System.out.println(searchIndex);
-        System.out.println(searchIndex != -1 ? array[searchIndex]+ " - Index is "+searchIndex : "Not found");
+
     }
 
     public static int binarySearch(String[] a, String x) {
